@@ -1,5 +1,6 @@
 function init(self)
 	msg.post("#signin", "disable")
+	msg.post("#signup", "disable")
 	
 	self.welcome = gui.get_node("welcome")
 	gui.set_position(self.welcome, vmath.vector3(0, 540, 0))

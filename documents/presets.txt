@@ -1,3 +1,6 @@
 BG = 243, 244, 248, 255
 Button (pink) - 255, 82, 116, 255
 Header (dark) - 35, 39, 49, 255
+
+title - 255, 255, 255, 255, 
+subtitle - #cccccc

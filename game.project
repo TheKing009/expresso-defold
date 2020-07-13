@@ -1,0 +1,24 @@
+[bootstrap]
+main_collection = /app/collections/controller.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 540
+height = 960
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = expresso
+dependencies = https://github.com/britzl/gooey/archive/master.zip
+
+[input]
+game_binding = /input/all.input_bindingc
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+

@@ -2,6 +2,8 @@ local gooey = require "gooey.gooey"
 
 local function sign_in()
 	pprint("sign_in")
+	msg.post("#welcome", "enable")
+	msg.post("#", "disable")
 end
 
 local function sign_up()
@@ -12,8 +14,8 @@ end
 function init(self)
 	msg.post(".", "acquire_input_focus")
 
-	gooey.input("email", gui.KEYBOARD_TYPE_EMAIL, nil, nil, {empty_text = "email"})
-	gooey.input("password", gui.KEYBOARD_TYPE_PASSWORD, nil, nil, {empty_text = "Password"})
+	gooey.input("email/input", gui.KEYBOARD_TYPE_EMAIL, nil, nil, {empty_text = "email"})
+	gooey.input("password/input", gui.KEYBOARD_TYPE_PASSWORD, nil, nil, {empty_text = "Password"})
 
 	gooey.button("sign_in/root", nil, nil, sign_in)
 	gooey.button("sign_up", nil, nil, sign_up)
@@ -40,8 +42,8 @@ end
 function on_input(self, action_id, action)
 	local group = gooey.group("group1", function()
 		if action_id then
-			gooey.input("email", gui.KEYBOARD_TYPE_EMAIL, action_id, action, {empty_text = "email"})
-			gooey.input("password", gui.KEYBOARD_TYPE_PASSWORD, action_id, action, {empty_text = "Password", max_length = 8})
+			gooey.input("email/input", gui.KEYBOARD_TYPE_EMAIL, action_id, action, {empty_text = "email"})
+			gooey.input("password/input", gui.KEYBOARD_TYPE_PASSWORD, action_id, action, {empty_text = "Password", max_length = 8})
 
 			gooey.button("sign_in/root", action_id, action, sign_in)
 			gooey.button("sign_up", action_id, action, sign_up)

@@ -4,7 +4,7 @@
 ***
 
 ## Introduction
-This open-source software is being developed keeping in mind the global impacts of COVID-19 pandemic, specially on the eduacation sector. Though this app is being developed for the education sector, it can also be used as a professional workspace.
+This software is being developed keeping in mind the global impacts of COVID-19 pandemic, specially on the eduacation sector. Though this app is being developed for the education sector, it can also be used as a professional workspace.
 
 ## Features
 The app will have the following features when it is fully developed. However the  listed feautures are subject to change on the discretion of the developers. 
